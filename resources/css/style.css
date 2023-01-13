@@ -1,0 +1,125 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    /* Colors */
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-cyan-blue: hsl(178, 100%, 50%);
+    --clr-dark-blue: hsl(216, 50%, 16%);
+    --clr-very-dark-blue: hsl(217, 54%, 11%);
+}
+
+/* GENERAL STYLES */
+
+body {
+    background-color: var(--clr-very-dark-blue);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+/* CARD STYLES */
+
+.card {
+    flex-shrink: 0;
+    background-color: var(--clr-dark-blue);
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Outfit";
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--clr-white);
+}
+
+.card__info-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--clr-soft-blue);
+}
+
+.card__price-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__price-info {
+    display: flex;
+}
+
+.card__price-icon,
+.card__days-icon {
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.card__price {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--clr-cyan-blue);
+}
+
+.card__days, 
+.card__creator-text {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--clr-soft-blue);
+}
+
+.card__horizontal-line {
+    display: block;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    border: 0;
+}
+
+.card__creator-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.card__creator-img {
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+.card__creator-text--highlight {
+    color: var(--clr-white);
+}
+
+/* CARD STYLE LIGHT */
+
+.card--light {
+    background-color: white;
+}
+
+.card--light .card__title {
+    color: black;
+}
+
+.card--light .card__info-text,
+.card--light .card__days,
+.card--light .card__creator-text {
+    color: hsl(215, 51%, 50%);
+}
+
+.card--light .card__creator-text--highlight {
+    color: black;
+}
