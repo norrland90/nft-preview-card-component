@@ -11,8 +11,8 @@
 - BEM methodology.
 
 ## Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/norrland90/nft-preview-card-component)
+- Live Site URL: [https://norrland90.github.io/nft-preview-card-component/)
 
 ## Status
 Project is: _finished_.
